@@ -14,7 +14,10 @@ const imageCatalog = [
     "images/fabrics/poly-cotton.jpeg",
     "images/fabrics/t800.jpeg",
     "images/fabrics/bamboo.jpeg",
-    "images/fabrics/nylon.jpeg", // Note: fixed typo here if needed, or left as is
+    "images/fabrics/nylon.jpeg", 
+    "images/fabrics/polyester chiffon.jpeg", 
+    "images/fabrics/polar fleece.jpeg", 
+    "images/fabrics/linen.jpeg", 
 ];
 
 // Loop through the catalog to build the UI

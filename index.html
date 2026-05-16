@@ -12,7 +12,10 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
+			/* Hobbes3 CSS override from Astral template */
+
 			a {
+				color: #0066cc;
 				text-decoration: none;
 			}
 
@@ -42,6 +45,15 @@
 			}
 
 			/* Read More functionality */
+			.read-more-btn {
+				color: #777777;
+				display: block;
+				width: fit-content;
+				margin: 20px auto 0 auto;
+				cursor: pointer;
+				margin: auto;
+			}
+			
 			.content-wrapper {
 				position: relative;
 				margin: 20px auto;
@@ -89,14 +101,6 @@
 				margin-bottom: 0;
 			}
 
-			.read-more-btn {
-				display: block;
-				width: fit-content;
-				margin: 20px auto 0 auto;
-				cursor: pointer;
-				margin: auto;
-			}
-
 			/* Auto-caption for the fabric catalog */
 			.image-card {
 				position: relative;
@@ -124,101 +128,70 @@
 		</style>
 	</head>
 	<body class="is-preload">
+		<div id="wrapper">
+			<nav id="nav">
+				<a href="#" class="icon solid fa-home"><span>Home</span></a>
+				<a href="#about" class="icon solid fa-folder"><span>About</span></a>
+				<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
+				<a href="https://twitter.com/ajlkn" class="icon brands fa-twitter"><span>Twitter</span></a>
+			</nav>
 
-		<!-- Wrapper-->
-			<div id="wrapper">
+			<div id="main">
+				<article id="home" class="panel intro">
+					<header>
+						<h1 id="title">金湾达</h1>
+						<h3>Jinwanda</h3>
+						<p>Shengze Textile Production and Trade</p>
+					</header>
+					<a href="#about" class="jumplink pic">
+						<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
+						<video autoplay muted loop playsinline disablepictureinpicture style="pointer-events: none;">
+							<source src="videos/manufacturing.webm" type="video/webm">
+							Your browser does not support the video tag.
+						</video>
+					</a>
+				</article>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<a href="#" class="icon solid fa-home"><span>Home</span></a>
-						<a href="#about" class="icon solid fa-folder"><span>About</span></a>
-						<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
-						<a href="https://twitter.com/ajlkn" class="icon brands fa-twitter"><span>Twitter</span></a>
-					</nav>
+				<article id="about" class="panel">
+					<header>
+						<h2>About Jinwanda (金湾达)</h2>
+					</header>
+					<div class="content-wrapper">
+						<div class="fade-box" id="textContainer">
+							<p>Headquartered in Shengze, China's historic "Silk Capital," Jinwanda is strategically located just an hour's drive from Shanghai. We are a fully integrated textile manufacturer and distributor with a robust global footprint, specializing in high-performance materials for apparel, outdoor equipment, and medical protection.</p>
 
-				<!-- Main -->
-					<div id="main">
+							<p>Our state-of-the-art 2,500 m<sup>2</sup> facility houses over 300 advanced water-jet looms and a comprehensive, in-house testing laboratory dedicated to rigorous quality control and fabric inspection. With a daily output exceeding 100 kilometers of technical textiles, we offer the scale and reliability required by the world's leading brands.</p>
 
-						<!-- Me -->
-							<article id="home" class="panel intro">
-								<header>
-									<h1 id="title">金湾达</h1>
-									<h3>Jinwanda</h3>
-									<p>Shengze Textile Production and Trade</p>
-								</header>
-								<a href="#about" class="jumplink pic">
-									<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
-									<video autoplay muted loop playsinline disablepictureinpicture style="pointer-events: none;">
-										<source src="videos/manufacturing.webm" type="video/webm">
-										Your browser does not support the video tag.
-									</video>
-								</a>
-							</article>
+							<p>Jinwanda proudly serves top-tier global retailers and brands, including ZARA, C&A, H&M, Decathlon, Sportsmaster, BAON, SAVAGE, and Kidswear, distributing across China, Southeast Asia, Europe, and North America.</p>
 
-						<!-- Work -->
-							<article id="about" class="panel">
-								<header>
-									<h2>About Jinwanda (金湾达)</h2>
-								</header>
-								<div class="content-wrapper">
-									<div class="fade-box" id="textContainer">
-										<p>Headquartered in Shengze, China's historic "Silk Capital," Jinwanda is strategically located just an hour's drive from Shanghai. We are a fully integrated textile manufacturer and distributor with a robust global footprint, specializing in high-performance materials for apparel, outdoor equipment, and medical protection.</p>
-
-										<p>Our state-of-the-art 2,500 m<sup>2</sup> facility houses over 300 advanced water-jet looms and a comprehensive, in-house testing laboratory dedicated to rigorous quality control and fabric inspection. With a daily output exceeding 100 kilometers of technical textiles, we offer the scale and reliability required by the world's leading brands.</p>
-
-										<p>Jinwanda proudly serves top-tier global retailers and brands, including ZARA, C&A, H&M, Decathlon, Sportsmaster, BAON, SAVAGE, and Kidswear, distributing across China, Southeast Asia, Europe, and North America.</p>
-
-										<p><b>Core Offerings & In-Stock Program:</b><br>
-										Our premium, high-demand product portfolio includes nylon taffeta, polyester taffeta, poly-cotton, nylon-cotton, memory fabric, silk, T800, and 2-way stretch elastic. To support our clients' agile supply chain needs, we maintain extensive bulk inventory with over 500 colorways available for immediate distribution.</p>
-									</div>
-									<a class="read-more-btn" id="readMoreBtn">Read More</a>
-								</div>
-								<section>
-									<div id="fabric-catalog" class="row catalog-container">
-										<!-- Fabric catalog will be dynamically populated here -->
-									</div>
-								</section>
-							</article>
-
-						<!-- Contact -->
-							<article id="contact" class="panel">
-								<header>
-									<h2>Contact</h2>
-								</header>
-								<form action="#" method="post">
-									<div>
-										<div class="row">
-											<div class="col-6 col-12-medium">
-												<input type="text" name="name" placeholder="Name" />
-											</div>
-											<div class="col-6 col-12-medium">
-												<input type="text" name="email" placeholder="Email" />
-											</div>
-											<div class="col-12">
-												<input type="text" name="subject" placeholder="Subject" />
-											</div>
-											<div class="col-12">
-												<textarea name="message" placeholder="Message" rows="6"></textarea>
-											</div>
-											<div class="col-12">
-												<input type="submit" value="Send Message" />
-											</div>
-										</div>
-									</div>
-								</form>
-							</article>
+							<p><b>Core Offerings & In-Stock Program:</b><br>
+							Our premium, high-demand product portfolio includes nylon taffeta, polyester taffeta, poly-cotton, nylon-cotton, memory fabric, silk, T800, and 2-way stretch elastic. To support our clients' agile supply chain needs, we maintain extensive bulk inventory with over 500 colorways available for immediate distribution.</p>
+						</div>
+						<a class="read-more-btn" id="readMoreBtn">Read More</a>
 					</div>
+					<section>
+						<h3>Some of our offerings:</h3>
+						<div id="fabric-catalog" class="row catalog-container">
+							<!-- Fabric catalog will be dynamically populated here -->
+						</div>
+					</section>
+				</article>
 
-					<!-- Footer -->
-					<div id="footer">
-						<ul class="copyright">
-							<li>&copy; Qingyue Gu</li><li>Created by <a href="https://hobbes3.com">Satoshi Kawasaki</a></li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</div>
-
+				<article id="contact" class="panel">
+					<header>
+						<h2>Contact</h2>
+					</header>
+					Contact our sales team: <a href="mailto:sales@jinwanda.trade?subject=Inquiry%20Regarding%20Fabric%20Catalog">sales@jinwanda.trade</a>
+				</article>
 			</div>
 
-		<!-- Scripts -->
+			<div id="footer">
+				<ul class="copyright">
+					<li>&copy; Qingyue Gu</li><li>Created by <a href="https://hobbes3.com">Satoshi Kawasaki</a></li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</div>
+		</div>
+
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/browser.min.js"></script>
 		<script src="assets/js/breakpoints.min.js"></script>
