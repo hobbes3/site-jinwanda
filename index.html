@@ -6,11 +6,29 @@
 -->
 <html>
 	<head>
-		<title>Astral by HTML5 UP</title>
+		<title>Jinwanda</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			article video {
+				width: 100%;
+				height: 100%;
+				object-fit: cover; /* This is the "zoom" magic */
+				
+				/* Optional: centers the crop */
+				object-position: center; 
+			}
+			#main > .panel.intro .pic {
+				width: 25em;
+			}
+
+			body {
+				background: #EFBF04;
+				background: linear-gradient(160deg, rgba(239, 191, 4, 1) 0%, rgba(150, 121, 5, 1) 76%, rgba(117, 71, 1, 1) 100%);
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -31,24 +49,38 @@
 						<!-- Me -->
 							<article id="home" class="panel intro">
 								<header>
-									<h1>Jane Doe</h1>
-									<p>Senior Astral Projectionist</p>
+									<h1>金湾达</h1>
+									<h3>Jinwanda</h3>
+									<p>Shengze Textile Production and Trade</p>
 								</header>
 								<a href="#work" class="jumplink pic">
 									<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
-									<img src="images/me.jpg" alt="" />
+									<video autoplay muted loop playsinline disablepictureinpicture style="pointer-events: none;">
+										<source src="videos/manufacturing.webm" type="video/webm">
+										Your browser does not support the video tag.
+									</video>
 								</a>
 							</article>
 
 						<!-- Work -->
 							<article id="work" class="panel">
 								<header>
-									<h2>Work</h2>
+									<h2>About us</h2>
 								</header>
 								<p>
-									Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit.
-									Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-									luctus elit eget interdum.
+									Jinwanda (金湾达) is located in Shengze (盛泽), which is considered the "Silk Capital" of China, and is about an hour driving from Shanghai.
+								</p>
+								<p>
+									Our expertise lies in the global textile market and we boast a comprehensive production chain, from production to distribution.
+								</p>
+								<p>
+									Our factory is around 2500m<sup>2</sup> and we have more than 300 advanced water jet looms. Our factory is also equipped with a full testing lab for fabric inspection. The daily output is around 100km of thread. 
+								</p>
+								<p>
+									Our products are used in garments, outdoor equipment, medical protection. We distribute our products to China, Southeast Asia, Europe and North America. Some of our customers include C&A, ZARA, Decathlon, H&M, Sportsmaster, BAON, SAVAGE, and Kidswear.
+								</p>
+								<p>
+									Currently, our best seller are Nylon Taffeta, Poly Taffeta, Cotton-Poly, Cotton-Nylon, Memory Foam, Real Silk, T800, and 2-way Elastic. Many of the products are in bulk stock and have more than 500 color choices. 
 								</p>
 								<section>
 									<div class="row">
@@ -95,7 +127,7 @@
 						<!-- Contact -->
 							<article id="contact" class="panel">
 								<header>
-									<h2>Contact Me</h2>
+									<h2>Contact</h2>
 								</header>
 								<form action="#" method="post">
 									<div>
@@ -119,13 +151,12 @@
 									</div>
 								</form>
 							</article>
-
 					</div>
 
-				<!-- Footer -->
+					<!-- Footer -->
 					<div id="footer">
 						<ul class="copyright">
-							<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>&copy; Qingyue Gu</li><li>Created by <a href="https://hobbes3.com">Satoshi Kawasaki</a></li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 						</ul>
 					</div>
 
