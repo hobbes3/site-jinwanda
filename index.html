@@ -12,23 +12,6 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-			article video {
-				width: 100%;
-				height: 100%;
-				object-fit: cover; /* This is the "zoom" magic */
-				
-				/* Optional: centers the crop */
-				object-position: center; 
-			}
-			#main > .panel.intro .pic {
-				width: 25em;
-			}
-
-			body {
-				background: #EFBF04;
-				background: linear-gradient(160deg, rgba(239, 191, 4, 1) 0%, rgba(150, 121, 5, 1) 76%, rgba(117, 71, 1, 1) 100%);
-			}
-
 			a {
 				text-decoration: none;
 			}
@@ -37,7 +20,28 @@
 				text-decoration: underline;
 			}
 
-			/* Read More */
+			body {
+				background: #EFBF04;
+				background: linear-gradient(160deg, rgba(239, 191, 4, 1) 0%, rgba(150, 121, 5, 1) 76%, rgba(117, 71, 1, 1) 100%);
+			}
+
+			#title {
+				color: #ffd700
+			}
+
+			/* Replace the static image from the Astral demo to a looping video */
+			article video {
+				width: 100%;
+				height: 100%;
+				object-fit: cover; 
+				object-position: center; 
+			}
+			
+			#main > .panel.intro .pic {
+				width: 25em;
+			}
+
+			/* Read More functionality */
 			.content-wrapper {
 				position: relative;
 				margin: 20px auto;
@@ -46,7 +50,7 @@
 			}
 
 			.fade-box {
-				max-height: 200px;
+				max-height: 300px;
 				overflow: hidden;
 				position: relative;
 				transition: max-height 0.4s ease; /* Smooth transition when expanding */
@@ -79,6 +83,10 @@
 			.fade-box.expanded::after {
 				opacity: 0;
 				pointer-events: none;
+			}
+
+			.fade-box p:last-child {
+				margin-bottom: 0;
 			}
 
 			.read-more-btn {
@@ -134,7 +142,7 @@
 						<!-- Me -->
 							<article id="home" class="panel intro">
 								<header>
-									<h1>金湾达</h1>
+									<h1 id="title">金湾达</h1>
 									<h3>Jinwanda</h3>
 									<p>Shengze Textile Production and Trade</p>
 								</header>

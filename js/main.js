@@ -4,7 +4,7 @@ $('#readMoreBtn').on('click', function() {
     const isExpanded = $('#textContainer').toggleClass('expanded').hasClass('expanded');
     
     // 2. Dynamically change the button text based on the new state
-    $(this).text(isExpanded ? 'Show Less' : 'Continue Reading');
+    $(this).text(isExpanded ? 'Show Less' : 'Read More');
 });
 
 // Auto-caption the fabric images
