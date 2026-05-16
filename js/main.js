@@ -13,7 +13,7 @@ const imageCatalog = [
     "images/fabrics/silk.jpg",
     "images/fabrics/nylon-taffeta.jpg",
     "images/fabrics/poly-cotton.jpg",
-    "images/fabrics/t800.jpg",
+    "images/fabrics/sherpa.jpg",
     "images/fabrics/bamboo.jpg",
     "images/fabrics/nylon.jpg", 
     "images/fabrics/polyester chiffon.jpg", 
